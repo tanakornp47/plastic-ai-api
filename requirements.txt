@@ -1,5 +1,8 @@
 flask
-ultralytics
-opencv-python-headless
-requests
 gunicorn
+requests
+opencv-python-headless
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+ultralytics
