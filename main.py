@@ -31,7 +31,7 @@ def predict():
             return jsonify({"error": "Missing image_url or row_id"}), 400
 
         # 1. ให้ AI ทำนาย (Detection Mode)
-        results = model(image_url)
+        results = model(image_url, imgsz=320)
         
         # ดึงผลลัพธ์แบบ Object Detection (Boxes)
         if len(results[0].boxes) > 0:
